@@ -25,16 +25,34 @@ a {
 .main-nav_logo {
   background: url("/images/HUGE-white.png") no-repeat center;
   background-size: contain;
-  left: 24px;
+  left: -74px;
   position: absolute;
   top: 20px;
+  transition: 0.5s ease-in-out;
   width: 50px;
+}
+.main-nav_logo.active {
+  left: 24px;
 }
 .main-nav_logo a {
   display:block;
   height: 100%;
   text-indent: -200px;
 }
+.main_nav_button {
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 24px;
+  left: 24px;
+  position: absolute;
+  top: 20px;
+  transition: 0.5s ease-in-out;
+}
+.main_nav_button.active {
+  left: auto;
+  right: 24px;
+}
+
 .main-nav_navigation {
   background: var(--color-white);
   display: flex;
