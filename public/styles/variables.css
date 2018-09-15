@@ -1,0 +1,18 @@
+/* Global variables used across the application */
+@import "fonts.css";
+
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-magenta: #ec008c;
+  --color-light-grey: #eee;
+  --color-translucent-black: rgba(0, 0, 0, 0.5);
+
+  /* Fonts */
+  --font-primary-nav: 21px/48px HUGEAvantGardeBold;
+  --font-secondary-nav: 16px/48px Galaxie;
+  --font-headline: 44px/48px HUGEAvantGardeBold;
+  --font-body: 14px/24px Galaxie;
+  --font-copyright: 12px/16px Helvetica Neue Regular, sans-serif;
+}
