@@ -44,13 +44,16 @@ a {
   cursor: pointer;
   font-size: 24px;
   left: 24px;
+  pointer-events: none;
   position: absolute;
   top: 20px;
   transition: 0.5s ease-in-out;
 }
-.main_nav_button.active {
-  left: auto;
-  right: 24px;
+.main_nav_button::before {
+  pointer-events: all;
+}
+.main_nav_button.icon-toggle-close {
+  left: calc(100vw - 48px);
 }
 
 .main-nav_navigation {
@@ -159,6 +162,7 @@ a {
   .main_nav_button {
     display: none;
   }
+
   .main-nav_navigation {
     background: transparent;
     display: block;
@@ -167,6 +171,9 @@ a {
     overflow-y: visible;
     top: 0;
     width: auto;
+  }
+  .main-nav_navigation.active {
+    left: 132px;
   }
   .main-nav_list {
     margin: 0;
@@ -194,7 +201,7 @@ a {
   .main-nav_list_button {
     display: none;
   }
-  .main-nav_list>li:hover ol {
+  .main-nav_list>li ol.active{
     display: block;
   }
   .main-nav_list>li ol {
